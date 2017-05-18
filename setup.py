@@ -7,7 +7,7 @@ app_path = os.path.dirname(add.__file__)
 
 description = "An AWS (Route53)-based dynamic DNS client."
 
-with open(os.path.join(app_path, 'resources', 'README.rst')) as f:
+with open(os.path.join(app_path, 'resources', 'README.md')) as f:
       long_description = f.read()
 
 with open(os.path.join(app_path, 'resources', 'requirements.txt')) as f:
@@ -30,7 +30,7 @@ setuptools.setup(
       install_requires=install_requires,
       package_data={
             'add': ['resources/scripts/*', 
-                    'resources/README.rst',
+                    'resources/README.md',
                     'resources/requirements.txt'],
       },
       scripts=[
